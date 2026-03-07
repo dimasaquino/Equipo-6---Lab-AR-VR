@@ -1,4 +1,4 @@
-# HandXp1orer AR – Proyecto AR/VR | Equipo 6
+# HandXp1orer AR – Proyecto AR/VR | Equipo 9
 
 ## Descripción
 Este repositorio contiene el desarrollo del proyecto **HandXp1orer AR**, una aplicación de realidad aumentada diseñada para facilitar el aprendizaje anatómico de los huesos de la mano y brazo mediante visualización tridimensional interactiva.
