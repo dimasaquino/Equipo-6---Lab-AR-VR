@@ -18,7 +18,7 @@ La aplicación permitirá al usuario:
   - Volver al modelo completo de la mano.
 
 ## Hardware
-- XREAL Air 2
+- XREAL Air 2 Ultra
 
 ## Tecnologías utilizadas
 - Unity 3D
