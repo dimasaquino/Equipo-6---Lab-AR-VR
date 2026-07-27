@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Samples/XREAL XR Plugin/3.1.0/Interaction Basics/HelloMR/HelloMR.unity
     guid: 0c611a2881614c644b9df39be7bf8fe6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ImageTrackingMano.unity
     guid: 9b613ccee72b344748689cd38354287b
   m_configObjects:
