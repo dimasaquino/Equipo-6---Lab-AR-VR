@@ -3915,11 +3915,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreAnatomico: Radio
-  descripcion: "Hueso del antebrazo que est\xE1 alineado con el pulgar; es el que
-    se rompe con mayor facilidad debido a su proximidad con la articulaci\xF3n de
-    la mu\xF1eca."
-  panelInformacion: {fileID: 0}
-  rendererObjetivo: {fileID: 0}
+  descripcion: Info del radioo
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1405518318}
   colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
   colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
 --- !u!114 &1405518316
@@ -3962,13 +3960,13 @@ MonoBehaviour:
   m_HoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405518314}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1405518315}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3977,13 +3975,13 @@ MonoBehaviour:
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405518314}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1405518315}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4084,6 +4082,11 @@ CapsuleCollider:
   m_Height: 0.00036870255
   m_Direction: 1
   m_Center: {x: 0.004661702, y: -0.0015026188, z: 0.010462464}
+--- !u!137 &1405518318 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2631190642627954037, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1500272249
 PrefabInstance:
   m_ObjectHideFlags: 0
