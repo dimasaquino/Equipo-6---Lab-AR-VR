@@ -952,6 +952,186 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375270789}
   m_CullTransparentMesh: 0
+--- !u!114 &504870475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Trapezoide
+  descripcion: "Hueso perteneciente a la fila distal del carpo, caracterizado por
+    presentar forma de cu\xF1a."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378061}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &504870476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 504870477}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 504870475}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 504870475}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 504870475}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!64 &504870477
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378060}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9152547512169907306, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
 --- !u!1 &525015822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,6 +1355,187 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579569825}
   m_CullTransparentMesh: 0
+--- !u!114 &587666346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Grande
+  descripcion: " Hueso perteneciente a la fila distal del carpo. Es el hueso m\xE1s
+    grande del carpo."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378073}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &587666347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 587666348}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 587666346}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 587666346}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 587666346}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &587666348
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00008019204
+  m_Height: 0.000255189
+  m_Direction: 0
+  m_Center: {x: 0.005415873, y: -0.0009161386, z: 0.01034072}
 --- !u!1 &589975655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1748,188 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &693740080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Trapecio
+  descripcion: "Hueso de la fila distal del carpo. Se articula distalmente con el
+    primer metacarpiano y participa en la articulaci\xF3n en silla de montar del
+    pulgar."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378063}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &693740081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 693740082}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 693740080}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 693740080}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 693740080}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &693740082
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378062}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00007187249
+  m_Height: 0.00017045262
+  m_Direction: 0
+  m_Center: {x: 0.005361882, y: -0.001164556, z: 0.010395409}
 --- !u!1 &695147304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,6 +2734,450 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835427344}
   m_CullTransparentMesh: 1
+--- !u!1 &853378060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7193171786591597163, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378061 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -5104237255947343887, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853378062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1401080691321548310, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378063 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -3425393458843351284, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853378064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2918402094448056535, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378065 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2062624154702947098, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853378066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9127744328213662826, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378067 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8275871467430274655, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853378068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4892468429851268370, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378069 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7643621457323248470, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853378070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6984001311071493655, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378071 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3163022102821876994, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853378072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4932046954367661052, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378073 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2873363313029031074, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &853378074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4522048983078667929, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &853378075 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6094736749588051678, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &853378076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Ganchoso
+  descripcion: "Hueso de la fila distal del carpo que presenta una ap\xF3fisis con
+    forma de gancho."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378071}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &853378077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 853378078}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 853378076}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 853378076}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 853378076}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &853378078
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378070}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00005445959
+  m_Height: 0.00020090106
+  m_Direction: 0
+  m_Center: {x: 0.0054785474, y: -0.0007523509, z: 0.010314638}
+--- !u!114 &853378079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: "C\xFAbito"
+  descripcion: "Hueso largo del antebrazo situado medialmente. Es m\xE1s largo que
+    el radio. El ol\xE9cranon recibe la inserci\xF3n del tend\xF3n del tr\xEDceps
+    braquial. La escotadura troclear se articula con la tr\xF3clea del h\xFAmero,
+    mientras que la escotadura radial se articula con la cabeza del radio."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378075}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &853378080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 853378081}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 853378079}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 853378079}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 853378079}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &853378081
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378074}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00019892934
+  m_Height: 0.00039785876
+  m_Direction: 1
+  m_Center: {x: 0.004570167, y: -0.0004122108, z: 0.010486939}
 --- !u!1 &960462558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,6 +3435,188 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &982399188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Escafoides
+  descripcion: "Hueso de la fila proximal del carpo, con forma semejante a una barca.
+    Se encuentra profundamente respecto de la tabaquera anat\xF3mica y es el hueso
+    del carpo que se fractura con mayor frecuencia."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378065}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &982399189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 982399190}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 982399188}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 982399188}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 982399188}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &982399190
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.000067445064
+  m_Height: 0.00025371555
+  m_Direction: 0
+  m_Center: {x: 0.005373096, y: -0.0009924003, z: 0.010539859}
 --- !u!1 &989596720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,6 +4325,188 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 1192137762}
   statusText: {fileID: 0}
+--- !u!114 &1194029405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Semilunar
+  descripcion: "Hueso de la fila proximal del carpo, con forma semejante a una luna
+    creciente. Es m\xE1s ancho en su parte anterior que en la posterior y se articula
+    con el extremo distal del radio."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378069}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1194029406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1194029407}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1194029405}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1194029405}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1194029405}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1194029407
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378068}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.000042269243
+  m_Height: 0.00019938948
+  m_Direction: 0
+  m_Center: {x: 0.005326227, y: -0.00074767676, z: 0.010496726}
 --- !u!1 &1367466413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3627,6 +4978,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 76.80475
       objectReference: {fileID: 0}
+    - target: {fileID: -7613379583394961227, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0039
+      objectReference: {fileID: 0}
+    - target: {fileID: -7613379583394961227, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0011
+      objectReference: {fileID: 0}
+    - target: {fileID: -4932046954367661052, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4892468429851268370, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4522048983078667929, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4450523870620500448, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 79.987915
@@ -3679,6 +5050,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 120.51271
       objectReference: {fileID: 0}
+    - target: {fileID: -1401080691321548310, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1327786639809058044, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
@@ -3702,6 +5077,22 @@ PrefabInstance:
     - target: {fileID: -1202781702868376479, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 40.93215
+      objectReference: {fileID: 0}
+    - target: {fileID: -1035018388546764701, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0028
+      objectReference: {fileID: 0}
+    - target: {fileID: -680202731059782651, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0006
+      objectReference: {fileID: 0}
+    - target: {fileID: -680202731059782651, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0061
+      objectReference: {fileID: 0}
+    - target: {fileID: -680202731059782651, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.002
       objectReference: {fileID: 0}
     - target: {fileID: -551287026322506802, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3753,6 +5144,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2291310706699102507, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918402094448056535, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2991741659220492354, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
@@ -3770,6 +5165,18 @@ PrefabInstance:
     - target: {fileID: 3586612958370603302, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 41.93427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928322939259817641, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0037
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928322939259817641, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928322939259817641, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0013
       objectReference: {fileID: 0}
     - target: {fileID: 3934414077791995138, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3795,6 +5202,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 31.094458
       objectReference: {fileID: 0}
+    - target: {fileID: 4996201553842000096, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0918
+      objectReference: {fileID: 0}
+    - target: {fileID: 4996201553842000096, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 6275729169308664803, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
@@ -3818,6 +5233,10 @@ PrefabInstance:
     - target: {fileID: 6862183835498645370, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 59.48734
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984001311071493655, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7066080690854926647, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3859,6 +5278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 82.408485
       objectReference: {fileID: 0}
+    - target: {fileID: 8836924452500248177, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.002
+      objectReference: {fileID: 0}
     - target: {fileID: 8866881277479344369, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
@@ -3870,6 +5293,10 @@ PrefabInstance:
     - target: {fileID: 8879528566716807029, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -89.98021
+      objectReference: {fileID: 0}
+    - target: {fileID: 9127744328213662826, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3887,6 +5314,78 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3266689678765890005, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1405518315}
+    - targetCorrespondingSourceObject: {fileID: -4522048983078667929, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853378081}
+    - targetCorrespondingSourceObject: {fileID: -4522048983078667929, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853378080}
+    - targetCorrespondingSourceObject: {fileID: -4522048983078667929, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853378079}
+    - targetCorrespondingSourceObject: {fileID: -4932046954367661052, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 587666348}
+    - targetCorrespondingSourceObject: {fileID: -4932046954367661052, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 587666347}
+    - targetCorrespondingSourceObject: {fileID: -4932046954367661052, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 587666346}
+    - targetCorrespondingSourceObject: {fileID: 6984001311071493655, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853378078}
+    - targetCorrespondingSourceObject: {fileID: 6984001311071493655, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853378077}
+    - targetCorrespondingSourceObject: {fileID: 6984001311071493655, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853378076}
+    - targetCorrespondingSourceObject: {fileID: -4892468429851268370, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1194029407}
+    - targetCorrespondingSourceObject: {fileID: -4892468429851268370, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1194029406}
+    - targetCorrespondingSourceObject: {fileID: -4892468429851268370, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1194029405}
+    - targetCorrespondingSourceObject: {fileID: 9127744328213662826, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1689073263}
+    - targetCorrespondingSourceObject: {fileID: 9127744328213662826, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1689073262}
+    - targetCorrespondingSourceObject: {fileID: 9127744328213662826, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1689073261}
+    - targetCorrespondingSourceObject: {fileID: 2918402094448056535, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 982399190}
+    - targetCorrespondingSourceObject: {fileID: 2918402094448056535, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 982399189}
+    - targetCorrespondingSourceObject: {fileID: 2918402094448056535, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 982399188}
+    - targetCorrespondingSourceObject: {fileID: -1401080691321548310, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 693740082}
+    - targetCorrespondingSourceObject: {fileID: -1401080691321548310, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 693740081}
+    - targetCorrespondingSourceObject: {fileID: -1401080691321548310, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 693740080}
+    - targetCorrespondingSourceObject: {fileID: 7193171786591597163, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 504870477}
+    - targetCorrespondingSourceObject: {fileID: 7193171786591597163, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 504870476}
+    - targetCorrespondingSourceObject: {fileID: 7193171786591597163, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 504870475}
     - targetCorrespondingSourceObject: {fileID: 2291310706699102507, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1934709541}
@@ -3915,7 +5414,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreAnatomico: Radio
-  descripcion: Info del radioo
+  descripcion: "Hueso largo del antebrazo situado lateralmente. Es m\xE1s corto que
+    el c\xFAbito. Su cabeza proximal se articula con el cap\xEDtulo del h\xFAmero
+    y con la escotadura radial del c\xFAbito. Su extremo distal y la ap\xF3fisis
+    estiloides se relacionan con los huesos escafoides, semilunar y piramidal del
+    carpo."
   panelInformacion: {fileID: 769924057}
   rendererObjetivo: {fileID: 1405518318}
   colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
@@ -4231,6 +5734,187 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2106375369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689073261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Pisiforme
+  descripcion: "Hueso de la fila proximal del carpo, con forma semejante a un guisante.
+    Est\xE1 situado en la superficie palmar del hueso piramidal."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 853378067}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1689073262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1689073263}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1689073261}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1689073261}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1689073261}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1689073263
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853378066}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.000056040157
+  m_Height: 0.00011208059
+  m_Direction: 0
+  m_Center: {x: 0.005316154, y: -0.0006875308, z: 0.010315597}
 --- !u!1 &1934709538 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2291310706699102507, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
@@ -4277,9 +5961,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreAnatomico: "H\xFAmero"
-  descripcion: "Hueso largo del brazo que se extiende desde el hombro hasta el codo.
-    Se articula superiormente con la esc\xE1pula e inferiormente con el radio y la
-    ulna."
+  descripcion: "Hueso largo del brazo. Su cabeza proximal se articula con la cavidad
+    glenoidea de la esc\xE1pula y forma la articulaci\xF3n del hombro. En su extremo
+    distal, los c\xF3ndilos medial y lateral se articulan en el codo con el c\xFAbito
+    y el radio."
   panelInformacion: {fileID: 769924057}
   rendererObjetivo: {fileID: 1934709540}
   colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
