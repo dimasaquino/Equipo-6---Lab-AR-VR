@@ -916,6 +916,188 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342829231}
   m_CullTransparentMesh: 1
+--- !u!114 &371422389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange proximal del tercer dedo
+  descripcion: "Falange proximal del dedo medio. Constituye el segmento proximal
+    del tercer dedo; los inter\xF3seos dorsales se insertan en las bases de las falanges
+    proximales de los dedos segundo a cuarto."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864682}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &371422390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 371422389}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 371422389}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 371422389}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &371422391
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864681}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00010797321
+  m_Height: 0.00021594646
+  m_Direction: 1
+  m_Center: {x: 0.005843304, y: -0.0012057296, z: 0.009541053}
 --- !u!1 &375270789
 GameObject:
   m_ObjectHideFlags: 0
@@ -3114,6 +3296,187 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835427344}
   m_CullTransparentMesh: 1
+--- !u!114 &837430673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange media del tercer dedo
+  descripcion: "Falange media del dedo medio. Forma parte del segmento intermedio
+    del tercer dedo y recibe la inserci\xF3n del flexor superficial de los dedos."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864692}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &837430674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 837430673}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 837430673}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 837430673}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &837430675
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864691}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00010919737
+  m_Height: 0.00021839478
+  m_Direction: 1
+  m_Center: {x: 0.005907001, y: -0.0012430195, z: 0.00926359}
 --- !u!1 &853378060 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7193171786591597163, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
@@ -4554,6 +4917,187 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1146137914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange media del cuarto dedo
+  descripcion: "Falange media del dedo anular. Es el segmento intermedio del cuarto
+    dedo y recibe la inserci\xF3n del flexor superficial de los dedos."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864690}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1146137915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1146137914}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1146137914}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1146137914}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1146137916
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864689}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.000092730035
+  m_Height: 0.00018546011
+  m_Direction: 1
+  m_Center: {x: 0.0058476105, y: -0.0009775242, z: 0.009270931}
 --- !u!1 &1169227178
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,6 +5804,673 @@ CapsuleCollider:
   m_Height: 0.00019283462
   m_Direction: 0
   m_Center: {x: 0.005326043, y: -0.0007537309, z: 0.010489077}
+--- !u!114 &1239150184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange media del quinto dedo
+  descripcion: "Falange media del dedo me\xF1ique. Es el segmento intermedio del
+    quinto dedo y participa en los movimientos de flexi\xF3n de los dedos mediante
+    la acci\xF3n del flexor superficial."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864688}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1239150185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1239150184}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1239150184}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1239150184}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1239150186
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864687}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00007968443
+  m_Height: 0.0001593689
+  m_Direction: 1
+  m_Center: {x: 0.0057555987, y: -0.000680189, z: 0.009377375}
+--- !u!1 &1348864677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7063886747015148516, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864678 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1819561389255669139, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5700321699061671482, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864680 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -249021762880693660, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5779246792551150464, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864682 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7339158976515555535, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6862339324246620353, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864684 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2181417535774144913, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4872059463942392481, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864686 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4587937402943283652, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2944447454621566780, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864688 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 9029590241566029581, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -227129092555535940, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864690 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6775183579702746799, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1943097010836948850, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864692 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8909796563081961791, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8596548273949063278, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864694 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1026085808050328117, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 351705916596885140, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864696 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7213759855708658607, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7226719975015623532, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864698 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7711894096427528789, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348864699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6565181727285859279, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1348864700 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8513295631629375184, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+  m_PrefabInstance: {fileID: 1405518313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1348864701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange distal del quinto dedo
+  descripcion: "Falange distal del dedo me\xF1ique. Constituye el segmento terminal
+    del quinto dedo y recibe en su base la inserci\xF3n del flexor profundo de los
+    dedos."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864696}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1348864702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348864701}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348864701}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348864701}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1348864703
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864695}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00006314969
+  m_Height: 0.0001262994
+  m_Direction: 1
+  m_Center: {x: 0.005749688, y: -0.00067560043, z: 0.009188808}
+--- !u!114 &1348864704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange distal del tercer dedo
+  descripcion: "Falange distal del dedo medio. Forma parte del segmento terminal
+    del tercer dedo; en su base se inserta el tend\xF3n del flexor profundo de los
+    dedos, que participa en la flexi\xF3n de las falanges distales de los cuatro
+    dedos mediales."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864700}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1348864705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348864704}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348864704}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348864704}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1348864706
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864699}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.000091296235
+  m_Height: 0.00018259251
+  m_Direction: 1
+  m_Center: {x: 0.0058870735, y: -0.0012607245, z: 0.009043747}
 --- !u!1 &1367466413
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,6 +6910,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 82.408485
       objectReference: {fileID: 0}
+    - target: {fileID: -8596548273949063278, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8483127057361428861, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003
+      objectReference: {fileID: 0}
     - target: {fileID: -8345127225965354935, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 58.271065
@@ -5742,6 +6961,18 @@ PrefabInstance:
     - target: {fileID: -7613379583394961227, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.0015
+      objectReference: {fileID: 0}
+    - target: {fileID: -7605306207725858845, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00103
+      objectReference: {fileID: 0}
+    - target: {fileID: -7098048156592142107, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0023
+      objectReference: {fileID: 0}
+    - target: {fileID: -5910293515586711378, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0039
       objectReference: {fileID: 0}
     - target: {fileID: -4932046954367661052, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_IsActive
@@ -5790,6 +7021,14 @@ PrefabInstance:
     - target: {fileID: -4235428676384533630, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 59.487297
+      objectReference: {fileID: 0}
+    - target: {fileID: -4229663264587276372, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0067
+      objectReference: {fileID: 0}
+    - target: {fileID: -4229663264587276372, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0091
       objectReference: {fileID: 0}
     - target: {fileID: -4121761622899981491, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5867,6 +7106,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.0028
       objectReference: {fileID: 0}
+    - target: {fileID: -981221740983816209, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0085
+      objectReference: {fileID: 0}
     - target: {fileID: -680202731059782651, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0006
@@ -5887,6 +7130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 82.408485
       objectReference: {fileID: 0}
+    - target: {fileID: -520485876990383186, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003
+      objectReference: {fileID: 0}
     - target: {fileID: 245114602816948189, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
@@ -5894,6 +7141,14 @@ PrefabInstance:
     - target: {fileID: 245114602816948189, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 82.4085
+      objectReference: {fileID: 0}
+    - target: {fileID: 896097507048850505, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 896097507048850505, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0037
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_Name
@@ -5906,6 +7161,10 @@ PrefabInstance:
     - target: {fileID: 1048462279989653415, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -44.458492
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620222210966200837, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0021
       objectReference: {fileID: 0}
     - target: {fileID: 1926005565203123985, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5958,6 +7217,10 @@ PrefabInstance:
     - target: {fileID: 3586612958370603302, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 41.93427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3835644157585017197, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0042
       objectReference: {fileID: 0}
     - target: {fileID: 3928322939259817641, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6098,6 +7361,10 @@ PrefabInstance:
     - target: {fileID: 9127744328213662826, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151736759263248125, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00284
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6259,6 +7526,114 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 675502759142810111, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1730428719}
+    - targetCorrespondingSourceObject: {fileID: 6565181727285859279, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348864706}
+    - targetCorrespondingSourceObject: {fileID: 6565181727285859279, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348864705}
+    - targetCorrespondingSourceObject: {fileID: 6565181727285859279, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348864704}
+    - targetCorrespondingSourceObject: {fileID: -7226719975015623532, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1642972423}
+    - targetCorrespondingSourceObject: {fileID: -7226719975015623532, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1642972422}
+    - targetCorrespondingSourceObject: {fileID: -7226719975015623532, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1642972421}
+    - targetCorrespondingSourceObject: {fileID: 351705916596885140, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348864703}
+    - targetCorrespondingSourceObject: {fileID: 351705916596885140, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348864702}
+    - targetCorrespondingSourceObject: {fileID: 351705916596885140, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348864701}
+    - targetCorrespondingSourceObject: {fileID: -8596548273949063278, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2001984811}
+    - targetCorrespondingSourceObject: {fileID: -8596548273949063278, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2001984810}
+    - targetCorrespondingSourceObject: {fileID: -8596548273949063278, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2001984809}
+    - targetCorrespondingSourceObject: {fileID: -1943097010836948850, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837430675}
+    - targetCorrespondingSourceObject: {fileID: -1943097010836948850, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837430674}
+    - targetCorrespondingSourceObject: {fileID: -1943097010836948850, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837430673}
+    - targetCorrespondingSourceObject: {fileID: -227129092555535940, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146137916}
+    - targetCorrespondingSourceObject: {fileID: -227129092555535940, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146137915}
+    - targetCorrespondingSourceObject: {fileID: -227129092555535940, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146137914}
+    - targetCorrespondingSourceObject: {fileID: 2944447454621566780, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1239150186}
+    - targetCorrespondingSourceObject: {fileID: 2944447454621566780, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1239150185}
+    - targetCorrespondingSourceObject: {fileID: 2944447454621566780, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1239150184}
+    - targetCorrespondingSourceObject: {fileID: 4872059463942392481, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2033707278}
+    - targetCorrespondingSourceObject: {fileID: 4872059463942392481, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2033707277}
+    - targetCorrespondingSourceObject: {fileID: 4872059463942392481, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2033707276}
+    - targetCorrespondingSourceObject: {fileID: -6862339324246620353, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1987078136}
+    - targetCorrespondingSourceObject: {fileID: -6862339324246620353, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1987078135}
+    - targetCorrespondingSourceObject: {fileID: -6862339324246620353, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1987078134}
+    - targetCorrespondingSourceObject: {fileID: 5779246792551150464, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 371422391}
+    - targetCorrespondingSourceObject: {fileID: 5779246792551150464, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 371422390}
+    - targetCorrespondingSourceObject: {fileID: 5779246792551150464, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 371422389}
+    - targetCorrespondingSourceObject: {fileID: 5700321699061671482, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467802648}
+    - targetCorrespondingSourceObject: {fileID: 5700321699061671482, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467802647}
+    - targetCorrespondingSourceObject: {fileID: 5700321699061671482, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1467802646}
+    - targetCorrespondingSourceObject: {fileID: 7063886747015148516, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1980705022}
+    - targetCorrespondingSourceObject: {fileID: 7063886747015148516, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1980705021}
+    - targetCorrespondingSourceObject: {fileID: 7063886747015148516, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1980705020}
     - targetCorrespondingSourceObject: {fileID: 2291310706699102507, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1934709541}
@@ -6463,6 +7838,188 @@ SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -2631190642627954037, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
   m_PrefabInstance: {fileID: 1405518313}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467802646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange proximal del cuarto dedo
+  descripcion: "Falange proximal del dedo medio. Constituye el segmento proximal
+    del tercer dedo; los inter\xF3seos dorsales se insertan en las bases de las falanges
+    proximales de los dedos segundo a cuarto."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864680}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1467802647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1467802646}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1467802646}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1467802646}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1467802648
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864679}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00011492599
+  m_Height: 0.00022985203
+  m_Direction: 1
+  m_Center: {x: 0.005802731, y: -0.00083053584, z: 0.0094705215}
 --- !u!1001 &1500272249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7039,6 +8596,188 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2106375369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1642972421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange distal del cuarto dedo
+  descripcion: "Falange distal del dedo anular. Forma parte del segmento terminal
+    del cuarto dedo y recibe en su base la inserci\xF3n del flexor profundo de los
+    dedos, encargado de flexionar las falanges distales de los cuatro dedos mediales."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864698}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1642972422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1642972421}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1642972421}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1642972421}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1642972423
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864697}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0000846682
+  m_Height: 0.00016933645
+  m_Direction: 1
+  m_Center: {x: 0.005833271, y: -0.0010001669, z: 0.009070924}
 --- !u!114 &1689073261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7903,6 +9642,188 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943432845}
   m_CullTransparentMesh: 1
+--- !u!114 &1980705020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange proximal del quinto dedo
+  descripcion: "Falange proximal del dedo me\xF1ique. Su base recibe inserciones
+    de m\xFAsculos como el abductor y el flexor corto del dedo me\xF1ique, relacionados
+    con la abducci\xF3n y flexi\xF3n del quinto dedo."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864678}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1980705021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1980705020}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1980705020}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1980705020}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1980705022
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864677}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00009903827
+  m_Height: 0.00019807658
+  m_Direction: 1
+  m_Center: {x: 0.0057190596, y: -0.0007266583, z: 0.009605048}
 --- !u!114 &1984361964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8084,6 +10005,369 @@ CapsuleCollider:
   m_Height: 0.00022560818
   m_Direction: 1
   m_Center: {x: 0.0056323595, y: -0.0008531782, z: 0.009891935}
+--- !u!114 &1987078134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange proximal del segundo dedo
+  descripcion: "Falange proximal del dedo \xEDndice. Constituye el segmento proximal
+    del segundo dedo y sirve como zona de inserci\xF3n para m\xFAsculos que act\xFAan
+    sobre las articulaciones metacarpofal\xE1ngicas e interfal\xE1ngicas."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864684}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &1987078135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1987078134}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1987078134}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1987078134}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &1987078136
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.000112518785
+  m_Height: 0.00022503761
+  m_Direction: 1
+  m_Center: {x: 0.005829262, y: -0.0014235284, z: 0.009610019}
+--- !u!114 &2001984809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange media del segundo dedo
+  descripcion: "Falange media del dedo \xEDndice. El flexor superficial de los dedos
+    se inserta en los cuerpos de las falanges medias y flexiona estas falanges."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864694}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &2001984810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2001984809}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2001984809}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2001984809}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &2001984811
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864693}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00010142739
+  m_Height: 0.00020285482
+  m_Direction: 1
+  m_Center: {x: 0.0059036952, y: -0.0015035686, z: 0.009396586}
 --- !u!1 &2017973560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8191,6 +10475,189 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2033707276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c17c7f31b4770d43a6cad0093859f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreAnatomico: Falange proximal del primer dedo
+  descripcion: "Falange proximal del pulgar. Corresponde a la falange proximal del
+    primer dedo; el pulgar posee falange proximal y distal. Varios m\xFAsculos de
+    la eminencia tenar y el aductor del pulgar se relacionan con la base de esta
+    falange."
+  panelInformacion: {fileID: 769924057}
+  rendererObjetivo: {fileID: 1348864686}
+  colorHover: {r: 1, g: 0.75, b: 0.15, a: 1}
+  colorSeleccionado: {r: 0.15, g: 0.75, b: 1, a: 1}
+--- !u!114 &2033707277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1399871315}
+  m_Colliders:
+  - {fileID: 1405518317}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2033707276}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: EntrarHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2033707276}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: SalirHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2033707276}
+        m_TargetAssemblyTypeName: ElementoAnatomicoInteractivo, Assembly-CSharp
+        m_MethodName: Seleccionar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &2033707278
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348864685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00008299516
+  m_Height: 0.00016599036
+  m_Direction: 1
+  m_Center: {x: 0.005340044, y: -0.0016208328, z: 0.009932852}
 --- !u!1 &2038890378
 GameObject:
   m_ObjectHideFlags: 0
