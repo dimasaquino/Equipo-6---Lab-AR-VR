@@ -1913,10 +1913,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.00014607825
-  m_Height: 0.0002921566
-  m_Direction: 1
-  m_Center: {x: 0.005392683, y: -0.00095441594, z: 0.010330381}
+  m_Radius: 0.00007240045
+  m_Height: 0.00027894648
+  m_Direction: 0
+  m_Center: {x: 0.005392683, y: -0.00094924815, z: 0.010336632}
 --- !u!1 &589975655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,10 +2307,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.00009626686
-  m_Height: 0.00019253376
+  m_Radius: 0.00008159178
+  m_Height: 0.00016318359
   m_Direction: 1
-  m_Center: {x: 0.0053503774, y: -0.0011594387, z: 0.010392346}
+  m_Center: {x: 0.005340875, y: -0.0011447628, z: 0.010387185}
 --- !u!1 &695147304
 GameObject:
   m_ObjectHideFlags: 0
@@ -3734,10 +3734,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.00011132258
-  m_Height: 0.0002226452
+  m_Radius: 0.000047875277
+  m_Height: 0.00021629772
   m_Direction: 1
-  m_Center: {x: 0.0053950767, y: -0.000722691, z: 0.010297381}
+  m_Center: {x: 0.0053950767, y: -0.00071951747, z: 0.010292742}
 --- !u!114 &853378079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4538,10 +4538,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.00010135339
-  m_Height: 0.00020270683
+  m_Radius: 0.00008532426
+  m_Height: 0.00017064856
   m_Direction: 1
-  m_Center: {x: 0.00536965, y: -0.0010201441, z: 0.0105238445}
+  m_Center: {x: 0.00536965, y: -0.0010160686, z: 0.010507805}
 --- !u!1 &989596720
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,10 +5499,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.00008735575
-  m_Height: 0.000204177
+  m_Radius: 0.000058323767
+  m_Height: 0.00012953368
   m_Direction: 1
-  m_Center: {x: 0.0053983238, y: -0.0007126308, z: 0.01041963}
+  m_Center: {x: 0.0053983238, y: -0.0006753094, z: 0.010419391}
 --- !u!1001 &1192137759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5800,10 +5800,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.00008025172
+  m_Radius: 0.000056017285
   m_Height: 0.00019283462
   m_Direction: 0
-  m_Center: {x: 0.005326043, y: -0.0007537309, z: 0.010489077}
+  m_Center: {x: 0.005326044, y: -0.0007560343, z: 0.010482248}
 --- !u!114 &1239150184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6942,6 +6942,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.000021662747
       objectReference: {fileID: 0}
+    - target: {fileID: -8138524556650938427, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00279
+      objectReference: {fileID: 0}
     - target: {fileID: -7719454715056140272, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
@@ -7343,8 +7347,12 @@ PrefabInstance:
       value: 0.0016
       objectReference: {fileID: 0}
     - target: {fileID: 8836924452500248177, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00069
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836924452500248177, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.002
+      value: 0.0005
       objectReference: {fileID: 0}
     - target: {fileID: 8866881277479344369, guid: 8ecf7a53f273f1c4b9eea7855e2f2f17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8955,10 +8963,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.000057543562
-  m_Height: 0.00014788617
+  m_Radius: 0.000051550214
+  m_Height: 0.00010310045
   m_Direction: 1
-  m_Center: {x: 0.005325546, y: -0.0006858917, z: 0.010312419}
+  m_Center: {x: 0.005325546, y: -0.00069984014, z: 0.010318406}
 --- !u!114 &1730428719
 MonoBehaviour:
   m_ObjectHideFlags: 0
