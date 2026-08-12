@@ -10,11 +10,9 @@ Este proyecto propone el desarrollo de una aplicación que permita visualizar un
 ## Propuesta de solución
 La aplicación permitirá al usuario:
 - Visualizar sobre ella un **modelo 3D completo de la mano y brazo en realidad aumentada**.
-- Seleccionar huesos específicos para:
+- Seleccionar huesos y músculos específicos para:
   - Resaltarlos dentro del modelo.
   - Mostrar su **nombre y función anatómica**.
-  - Ocultar temporalmente los demás huesos.
-  - Aumentar el tamaño del hueso para observar detalles.
   - Volver al modelo completo de la mano.
 
 ## Hardware
