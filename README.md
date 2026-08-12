@@ -27,10 +27,12 @@ La aplicación permitirá al usuario:
 - GitHub (control de versiones)
 
 ## Integrantes del equipo
-- Nombre 1
-- Nombre 2
-- Nombre 3
-- Nombre 4
+- Dimas Leandro Aquino Pedraza
+- Carla Victoria Quispe
+- Angelica Gabriela Campos Zapata
+
+## Profesor a cargo
+- Miguel Rogger Hoyos Alvitez
 
 ## Estado del proyecto
 🚧 En desarrollo
