@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/XREAL XR Plugin/3.1.0/Interaction Basics/HelloMR/HelloMR.unity
-    guid: 0c611a2881614c644b9df39be7bf8fe6
-  - enabled: 0
-    path: Assets/Scenes/ImageTrackingMano.unity
-    guid: 9b613ccee72b344748689cd38354287b
+    path: Assets/Scenes/ImageTrackingMano_HandTracking.unity
+    guid: bbfa30fe5a356c747971a04e6a30ed4f
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 214235d9aac7241969c3827d34289d37, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2d667e0b13bdc431cab173e7ac7957e7, type: 2}
