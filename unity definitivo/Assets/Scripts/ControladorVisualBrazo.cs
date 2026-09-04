@@ -1,23 +1,64 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ControladorVisualBrazo : MonoBehaviour
 {
+    private const string EstadoHuesosCerrando = "Armature|CERRAR";
+
+    public bool HuesosAbiertos => huesosAbiertos;
+
+    public bool HuesosEnTransicion
+    {
+        get
+        {
+            if (animatorHuesos == null || !animatorHuesos.isActiveAndEnabled)
+                return false;
+
+            const int capa = 0;
+            if (animatorHuesos.IsInTransition(capa))
+                return true;
+
+            AnimatorStateInfo estado = animatorHuesos.GetCurrentAnimatorStateInfo(capa);
+            bool animacionRelevante =
+                estado.IsName(EstadoHuesosAbiertos) ||
+                estado.IsName(EstadoHuesosCerrando);
+
+            return animacionRelevante && estado.normalizedTime < 1f;
+        }
+    }
+
+    private const string EstadoHuesosAbiertos = "Armature|ABRIR";
+
     [Header("Huesos")]
     public GameObject huesosAnimacion;
     public Animator animatorHuesos;
 
-    [Header("Músculos")]
+    [SerializeField] private PanelInformacionAnatomica panelInformacion;
+
+    [Header("MÃºsculos")]
     public GameObject musculosAnimacion;
     public Animator animatorMusculos;
 
     private bool huesosVisibles = false;
     private bool huesosAbiertos = false;
-
     private bool musculosVisibles = false;
     private bool musculosAbiertos = false;
 
-    void Start()
+    private XRBaseInteractable[] interactablesHuesos;
+    private Coroutine esperaAperturaHuesos;
+    private int versionEsperaApertura;
+
+    private void Awake()
     {
+        CachearInteractablesHuesos();
+        EstablecerInteraccionHuesos(false);
+    }
+
+    private void Start()
+    {
+        PrepararHuesosNoInteractivos();
+
         if (huesosAnimacion != null)
             huesosAnimacion.SetActive(false);
 
@@ -34,13 +75,22 @@ public class ControladorVisualBrazo : MonoBehaviour
     {
         huesosVisibles = !huesosVisibles;
 
+        if (!huesosVisibles)
+        {
+            huesosAbiertos = false;
+            PrepararHuesosNoInteractivos();
+        }
+
         if (huesosAnimacion != null)
             huesosAnimacion.SetActive(huesosVisibles);
 
-        if (huesosVisibles && animatorHuesos != null)
+        if (huesosVisibles)
         {
+            PrepararHuesosNoInteractivos();
             huesosAbiertos = false;
-            ReiniciarAnimator(animatorHuesos);
+
+            if (animatorHuesos != null)
+                ReiniciarAnimator(animatorHuesos);
         }
     }
 
@@ -49,6 +99,7 @@ public class ControladorVisualBrazo : MonoBehaviour
         if (!huesosVisibles)
         {
             huesosVisibles = true;
+            huesosAbiertos = false;
 
             if (huesosAnimacion != null)
                 huesosAnimacion.SetActive(true);
@@ -57,13 +108,28 @@ public class ControladorVisualBrazo : MonoBehaviour
                 ReiniciarAnimator(animatorHuesos);
         }
 
-        if (animatorHuesos != null)
+        if (animatorHuesos == null)
+            return;
+
+        if (!huesosAbiertos)
+        {
+            PrepararHuesosNoInteractivos();
             AlternarExplosion(animatorHuesos, ref huesosAbiertos);
+            IniciarEsperaFinAperturaHuesos();
+        }
+        else
+        {
+            PrepararHuesosNoInteractivos();
+            AlternarExplosion(animatorHuesos, ref huesosAbiertos);
+        }
     }
 
     public void MostrarOcultarMusculos()
     {
         musculosVisibles = !musculosVisibles;
+
+        if (musculosVisibles)
+            PrepararHuesosNoInteractivos();
 
         if (musculosAnimacion != null)
             musculosAnimacion.SetActive(musculosVisibles);
@@ -80,6 +146,7 @@ public class ControladorVisualBrazo : MonoBehaviour
         if (!musculosVisibles)
         {
             musculosVisibles = true;
+            PrepararHuesosNoInteractivos();
 
             if (musculosAnimacion != null)
                 musculosAnimacion.SetActive(true);
@@ -92,11 +159,84 @@ public class ControladorVisualBrazo : MonoBehaviour
             AlternarExplosion(animatorMusculos, ref musculosAbiertos);
     }
 
+    private void CachearInteractablesHuesos()
+    {
+        interactablesHuesos = huesosAnimacion != null
+            ? huesosAnimacion.GetComponentsInChildren<XRBaseInteractable>(true)
+            : new XRBaseInteractable[0];
+    }
+
+    private void EstablecerInteraccionHuesos(bool habilitada)
+    {
+        if (interactablesHuesos == null)
+            return;
+
+        foreach (XRBaseInteractable interactable in interactablesHuesos)
+        {
+            if (interactable != null)
+                interactable.enabled = habilitada;
+        }
+    }
+
+    private void PrepararHuesosNoInteractivos()
+    {
+        CancelarEsperaFinAperturaHuesos();
+        EstablecerInteraccionHuesos(false);
+
+        if (panelInformacion != null)
+            panelInformacion.OcultarPanel();
+    }
+
+    private void IniciarEsperaFinAperturaHuesos()
+    {
+        CancelarEsperaFinAperturaHuesos();
+        int versionActual = versionEsperaApertura;
+        esperaAperturaHuesos =
+            StartCoroutine(EsperarFinAperturaHuesos(versionActual));
+    }
+
+    private void CancelarEsperaFinAperturaHuesos()
+    {
+        versionEsperaApertura++;
+
+        if (esperaAperturaHuesos != null)
+        {
+            StopCoroutine(esperaAperturaHuesos);
+            esperaAperturaHuesos = null;
+        }
+    }
+
+    private IEnumerator EsperarFinAperturaHuesos(int versionActual)
+    {
+        while (versionActual == versionEsperaApertura &&
+               huesosVisibles &&
+               huesosAbiertos)
+        {
+            if (animatorHuesos != null && animatorHuesos.isActiveAndEnabled)
+            {
+                AnimatorStateInfo estado =
+                    animatorHuesos.GetCurrentAnimatorStateInfo(0);
+
+                if (estado.IsName(EstadoHuesosAbiertos) &&
+                    estado.normalizedTime >= 1f &&
+                    !animatorHuesos.IsInTransition(0))
+                {
+                    EstablecerInteraccionHuesos(true);
+                    esperaAperturaHuesos = null;
+                    yield break;
+                }
+            }
+
+            yield return null;
+        }
+
+        esperaAperturaHuesos = null;
+    }
+
     private void ReiniciarAnimator(Animator animator)
     {
         animator.ResetTrigger("Abrir");
         animator.ResetTrigger("Cerrar");
-
         animator.Play("Armature|IDLE", 0, 0f);
         animator.Update(0f);
     }
