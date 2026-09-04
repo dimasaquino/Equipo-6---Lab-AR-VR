@@ -4,31 +4,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ControladorVisualBrazo : MonoBehaviour
 {
-    private const string EstadoHuesosCerrando = "Armature|CERRAR";
+    private const string EstadoAbierto = "Armature|ABRIR";
+    private const string EstadoCerrando = "Armature|CERRAR";
 
+    public bool HuesosVisibles => huesosVisibles;
+    public bool MusculosVisibles => musculosVisibles;
     public bool HuesosAbiertos => huesosAbiertos;
-
-    public bool HuesosEnTransicion
-    {
-        get
-        {
-            if (animatorHuesos == null || !animatorHuesos.isActiveAndEnabled)
-                return false;
-
-            const int capa = 0;
-            if (animatorHuesos.IsInTransition(capa))
-                return true;
-
-            AnimatorStateInfo estado = animatorHuesos.GetCurrentAnimatorStateInfo(capa);
-            bool animacionRelevante =
-                estado.IsName(EstadoHuesosAbiertos) ||
-                estado.IsName(EstadoHuesosCerrando);
-
-            return animacionRelevante && estado.normalizedTime < 1f;
-        }
-    }
-
-    private const string EstadoHuesosAbiertos = "Armature|ABRIR";
+    public bool MusculosAbiertos => musculosAbiertos;
+    public bool HuesosEnTransicion => AnimatorEnTransicion(animatorHuesos);
+    public bool MusculosEnTransicion => AnimatorEnTransicion(animatorMusculos);
 
     [Header("Huesos")]
     public GameObject huesosAnimacion;
@@ -40,24 +24,30 @@ public class ControladorVisualBrazo : MonoBehaviour
     public GameObject musculosAnimacion;
     public Animator animatorMusculos;
 
-    private bool huesosVisibles = false;
-    private bool huesosAbiertos = false;
-    private bool musculosVisibles = false;
-    private bool musculosAbiertos = false;
+    private bool huesosVisibles;
+    private bool huesosAbiertos;
+    private bool musculosVisibles;
+    private bool musculosAbiertos;
 
     private XRBaseInteractable[] interactablesHuesos;
+    private XRBaseInteractable[] interactablesMusculos;
+
     private Coroutine esperaAperturaHuesos;
-    private int versionEsperaApertura;
+    private Coroutine esperaAperturaMusculos;
+    private int versionEsperaAperturaHuesos;
+    private int versionEsperaAperturaMusculos;
 
     private void Awake()
     {
-        CachearInteractablesHuesos();
+        CachearInteractables();
         EstablecerInteraccionHuesos(false);
+        EstablecerInteraccionMusculos(false);
     }
 
     private void Start()
     {
         PrepararHuesosNoInteractivos();
+        PrepararMusculosNoInteractivos();
 
         if (huesosAnimacion != null)
             huesosAnimacion.SetActive(false);
@@ -66,49 +56,25 @@ public class ControladorVisualBrazo : MonoBehaviour
             musculosAnimacion.SetActive(false);
 
         huesosVisibles = false;
-        musculosVisibles = false;
         huesosAbiertos = false;
+        musculosVisibles = false;
         musculosAbiertos = false;
     }
 
     public void MostrarOcultarHuesos()
     {
-        huesosVisibles = !huesosVisibles;
-
-        if (!huesosVisibles)
-        {
-            huesosAbiertos = false;
-            PrepararHuesosNoInteractivos();
-        }
-
-        if (huesosAnimacion != null)
-            huesosAnimacion.SetActive(huesosVisibles);
-
         if (huesosVisibles)
         {
-            PrepararHuesosNoInteractivos();
-            huesosAbiertos = false;
-
-            if (animatorHuesos != null)
-                ReiniciarAnimator(animatorHuesos);
+            OcultarHuesos();
+            return;
         }
+
+        MostrarHuesosEnEstadoNormal();
     }
 
-    public void AlternarExplosionHuesos()
+public void AlternarExplosionHuesos()
     {
-        if (!huesosVisibles)
-        {
-            huesosVisibles = true;
-            huesosAbiertos = false;
-
-            if (huesosAnimacion != null)
-                huesosAnimacion.SetActive(true);
-
-            if (animatorHuesos != null)
-                ReiniciarAnimator(animatorHuesos);
-        }
-
-        if (animatorHuesos == null)
+        if (!huesosVisibles || animatorHuesos == null)
             return;
 
         if (!huesosAbiertos)
@@ -126,52 +92,120 @@ public class ControladorVisualBrazo : MonoBehaviour
 
     public void MostrarOcultarMusculos()
     {
-        musculosVisibles = !musculosVisibles;
-
         if (musculosVisibles)
-            PrepararHuesosNoInteractivos();
+        {
+            OcultarMusculos();
+            return;
+        }
+
+        MostrarMusculosEnEstadoNormal();
+    }
+
+public void AlternarExplosionMusculos()
+    {
+        if (!musculosVisibles || animatorMusculos == null)
+            return;
+
+        if (!musculosAbiertos)
+        {
+            PrepararMusculosNoInteractivos();
+            AlternarExplosion(animatorMusculos, ref musculosAbiertos);
+            IniciarEsperaFinAperturaMusculos();
+        }
+        else
+        {
+            PrepararMusculosNoInteractivos();
+            AlternarExplosion(animatorMusculos, ref musculosAbiertos);
+        }
+    }
+
+    private void MostrarHuesosEnEstadoNormal()
+    {
+        OcultarMusculos();
+        PrepararHuesosNoInteractivos();
+
+        huesosVisibles = true;
+        huesosAbiertos = false;
+
+        if (huesosAnimacion != null)
+            huesosAnimacion.SetActive(true);
+
+        if (animatorHuesos != null)
+            ReiniciarAnimator(animatorHuesos);
+    }
+
+    private void MostrarMusculosEnEstadoNormal()
+    {
+        OcultarHuesos();
+        PrepararMusculosNoInteractivos();
+
+        musculosVisibles = true;
+        musculosAbiertos = false;
 
         if (musculosAnimacion != null)
-            musculosAnimacion.SetActive(musculosVisibles);
-
-        if (musculosVisibles && animatorMusculos != null)
-        {
-            musculosAbiertos = false;
-            ReiniciarAnimator(animatorMusculos);
-        }
-    }
-
-    public void AlternarExplosionMusculos()
-    {
-        if (!musculosVisibles)
-        {
-            musculosVisibles = true;
-            PrepararHuesosNoInteractivos();
-
-            if (musculosAnimacion != null)
-                musculosAnimacion.SetActive(true);
-
-            if (animatorMusculos != null)
-                ReiniciarAnimator(animatorMusculos);
-        }
+            musculosAnimacion.SetActive(true);
 
         if (animatorMusculos != null)
-            AlternarExplosion(animatorMusculos, ref musculosAbiertos);
+            ReiniciarAnimator(animatorMusculos);
     }
 
-    private void CachearInteractablesHuesos()
+    private void OcultarHuesos()
+    {
+        PrepararHuesosNoInteractivos();
+
+        if (animatorHuesos != null && animatorHuesos.isActiveAndEnabled)
+            ReiniciarAnimator(animatorHuesos);
+
+        if (huesosAnimacion != null)
+            huesosAnimacion.SetActive(false);
+
+        huesosVisibles = false;
+        huesosAbiertos = false;
+    }
+
+    private void OcultarMusculos()
+    {
+        PrepararMusculosNoInteractivos();
+
+        if (animatorMusculos != null && animatorMusculos.isActiveAndEnabled)
+            ReiniciarAnimator(animatorMusculos);
+
+        if (musculosAnimacion != null)
+            musculosAnimacion.SetActive(false);
+
+        musculosVisibles = false;
+        musculosAbiertos = false;
+    }
+
+    private void CachearInteractables()
     {
         interactablesHuesos = huesosAnimacion != null
             ? huesosAnimacion.GetComponentsInChildren<XRBaseInteractable>(true)
+            : new XRBaseInteractable[0];
+
+        interactablesMusculos = musculosAnimacion != null
+            ? musculosAnimacion.GetComponentsInChildren<XRBaseInteractable>(true)
             : new XRBaseInteractable[0];
     }
 
     private void EstablecerInteraccionHuesos(bool habilitada)
     {
-        if (interactablesHuesos == null)
+        EstablecerInteraccion(interactablesHuesos, habilitada);
+    }
+
+    private void EstablecerInteraccionMusculos(bool habilitada)
+    {
+        EstablecerInteraccion(interactablesMusculos, habilitada);
+    }
+
+    private static void EstablecerInteraccion(
+        XRBaseInteractable[] interactables,
+        bool habilitada)
+    {
+        if (interactables == null)
             return;
 
-        foreach (XRBaseInteractable interactable in interactablesHuesos)
+        foreach (XRBaseInteractable interactable in interactables)
         {
             if (interactable != null)
                 interactable.enabled = habilitada;
@@ -182,49 +216,73 @@ public class ControladorVisualBrazo : MonoBehaviour
     {
         CancelarEsperaFinAperturaHuesos();
         EstablecerInteraccionHuesos(false);
+        CerrarPanelYLimpiarSeleccion();
+    }
 
+    private void PrepararMusculosNoInteractivos()
+    {
+        CancelarEsperaFinAperturaMusculos();
+        EstablecerInteraccionMusculos(false);
+        CerrarPanelYLimpiarSeleccion();
+    }
+
+    private void CerrarPanelYLimpiarSeleccion()
+    {
         if (panelInformacion != null)
             panelInformacion.OcultarPanel();
+        else
+            ElementoAnatomicoInteractivo.LimpiarSeleccionActual();
     }
 
     private void IniciarEsperaFinAperturaHuesos()
     {
         CancelarEsperaFinAperturaHuesos();
-        int versionActual = versionEsperaApertura;
+        int versionActual = versionEsperaAperturaHuesos;
         esperaAperturaHuesos =
             StartCoroutine(EsperarFinAperturaHuesos(versionActual));
     }
 
+    private void IniciarEsperaFinAperturaMusculos()
+    {
+        CancelarEsperaFinAperturaMusculos();
+        int versionActual = versionEsperaAperturaMusculos;
+        esperaAperturaMusculos =
+            StartCoroutine(EsperarFinAperturaMusculos(versionActual));
+    }
+
     private void CancelarEsperaFinAperturaHuesos()
     {
-        versionEsperaApertura++;
+        versionEsperaAperturaHuesos++;
 
-        if (esperaAperturaHuesos != null)
-        {
-            StopCoroutine(esperaAperturaHuesos);
-            esperaAperturaHuesos = null;
-        }
+        if (esperaAperturaHuesos == null)
+            return;
+
+        StopCoroutine(esperaAperturaHuesos);
+        esperaAperturaHuesos = null;
+    }
+
+    private void CancelarEsperaFinAperturaMusculos()
+    {
+        versionEsperaAperturaMusculos++;
+
+        if (esperaAperturaMusculos == null)
+            return;
+
+        StopCoroutine(esperaAperturaMusculos);
+        esperaAperturaMusculos = null;
     }
 
     private IEnumerator EsperarFinAperturaHuesos(int versionActual)
     {
-        while (versionActual == versionEsperaApertura &&
+        while (versionActual == versionEsperaAperturaHuesos &&
                huesosVisibles &&
                huesosAbiertos)
         {
-            if (animatorHuesos != null && animatorHuesos.isActiveAndEnabled)
+            if (AperturaTerminada(animatorHuesos))
             {
-                AnimatorStateInfo estado =
-                    animatorHuesos.GetCurrentAnimatorStateInfo(0);
-
-                if (estado.IsName(EstadoHuesosAbiertos) &&
-                    estado.normalizedTime >= 1f &&
-                    !animatorHuesos.IsInTransition(0))
-                {
-                    EstablecerInteraccionHuesos(true);
-                    esperaAperturaHuesos = null;
-                    yield break;
-                }
+                EstablecerInteraccionHuesos(true);
+                esperaAperturaHuesos = null;
+                yield break;
             }
 
             yield return null;
@@ -233,7 +291,55 @@ public class ControladorVisualBrazo : MonoBehaviour
         esperaAperturaHuesos = null;
     }
 
-    private void ReiniciarAnimator(Animator animator)
+    private IEnumerator EsperarFinAperturaMusculos(int versionActual)
+    {
+        while (versionActual == versionEsperaAperturaMusculos &&
+               musculosVisibles &&
+               musculosAbiertos)
+        {
+            if (AperturaTerminada(animatorMusculos))
+            {
+                EstablecerInteraccionMusculos(true);
+                esperaAperturaMusculos = null;
+                yield break;
+            }
+
+            yield return null;
+        }
+
+        esperaAperturaMusculos = null;
+    }
+
+    private static bool AperturaTerminada(Animator animator)
+    {
+        if (animator == null || !animator.isActiveAndEnabled)
+            return false;
+
+        const int capa = 0;
+        AnimatorStateInfo estado = animator.GetCurrentAnimatorStateInfo(capa);
+        return estado.IsName(EstadoAbierto) &&
+               estado.normalizedTime >= 1f &&
+               !animator.IsInTransition(capa);
+    }
+
+    private static bool AnimatorEnTransicion(Animator animator)
+    {
+        if (animator == null || !animator.isActiveAndEnabled)
+            return false;
+
+        const int capa = 0;
+        if (animator.IsInTransition(capa))
+            return true;
+
+        AnimatorStateInfo estado = animator.GetCurrentAnimatorStateInfo(capa);
+        bool animacionRelevante =
+            estado.IsName(EstadoAbierto) ||
+            estado.IsName(EstadoCerrando);
+
+        return animacionRelevante && estado.normalizedTime < 1f;
+    }
+
+    private static void ReiniciarAnimator(Animator animator)
     {
         animator.ResetTrigger("Abrir");
         animator.ResetTrigger("Cerrar");
@@ -241,7 +347,9 @@ public class ControladorVisualBrazo : MonoBehaviour
         animator.Update(0f);
     }
 
-    private void AlternarExplosion(Animator animator, ref bool abierto)
+    private static void AlternarExplosion(
+        Animator animator,
+        ref bool abierto)
     {
         if (!abierto)
         {

@@ -8,6 +8,7 @@ public class GestureExplosionController : MonoBehaviour
 {
     public enum HandSelection { Right, Left }
     private enum HandState { Neutral, Closed, Open }
+    private enum ExplosionMode { None, Huesos, Musculos, Inconsistent }
 
     private struct GestureSample
     {
@@ -58,7 +59,9 @@ public class GestureExplosionController : MonoBehaviour
     private bool armedForOpen;
     private bool readyForClose;
     private bool triggerLatch;
-    private bool lastHuesosAbiertos;
+    private ExplosionMode lastMode = ExplosionMode.None;
+    private bool lastModeOpen;
+    private bool inconsistentModeWarningLogged;
     private bool stateInitialized;
     private GestureSample lastSample;
 
@@ -128,7 +131,7 @@ public class GestureExplosionController : MonoBehaviour
         handSubsystem = null;
     }
 
-    private void OnUpdatedHands(
+private void OnUpdatedHands(
         XRHandSubsystem subsystem,
         XRHandSubsystem.UpdateSuccessFlags updateSuccessFlags,
         XRHandSubsystem.UpdateType updateType)
@@ -138,9 +141,20 @@ public class GestureExplosionController : MonoBehaviour
 
         SynchronizeWithController(false);
 
+        ExplosionMode mode = GetActiveMode();
+        if (mode == ExplosionMode.Inconsistent)
+        {
+            WarnInconsistentMode();
+            CancelGestureProgress();
+            return;
+        }
+
+        inconsistentModeWarningLogged = false;
+
         if (HasInteractionConflict() ||
             controladorVisualBrazo == null ||
-            controladorVisualBrazo.HuesosEnTransicion)
+            mode == ExplosionMode.None ||
+            IsModeInTransition(mode))
         {
             CancelGestureProgress();
             return;
@@ -177,7 +191,7 @@ public class GestureExplosionController : MonoBehaviour
 
         stateDuration += Time.unscaledDeltaTime;
 
-        if (!controladorVisualBrazo.HuesosAbiertos)
+        if (!IsModeOpen(mode))
             ProcessNormalState();
         else
             ProcessExplodedState();
@@ -233,11 +247,19 @@ public class GestureExplosionController : MonoBehaviour
         }
     }
 
-    private void RequestExplosion(bool currentlyOpen)
+private void RequestExplosion(bool currentlyOpen)
     {
+        ExplosionMode mode = GetActiveMode();
+        if (mode == ExplosionMode.Inconsistent)
+        {
+            WarnInconsistentMode();
+            return;
+        }
+
         if (controladorVisualBrazo == null ||
-            controladorVisualBrazo.HuesosAbiertos != currentlyOpen ||
-            controladorVisualBrazo.HuesosEnTransicion)
+            mode == ExplosionMode.None ||
+            IsModeOpen(mode) != currentlyOpen ||
+            IsModeInTransition(mode))
             return;
 
         LogEventWithScore(currentlyOpen
@@ -246,34 +268,98 @@ public class GestureExplosionController : MonoBehaviour
 
         latchedState = currentState;
         triggerLatch = true;
-        controladorVisualBrazo.AlternarExplosionHuesos();
-        lastHuesosAbiertos = controladorVisualBrazo.HuesosAbiertos;
+        ToggleMode(mode);
+        lastMode = mode;
+        lastModeOpen = IsModeOpen(mode);
         cooldownUntil = Time.unscaledTime + cooldown;
         ResetProgress();
     }
 
-    private void SynchronizeWithController(bool force)
+private void SynchronizeWithController(bool force)
     {
         if (controladorVisualBrazo == null)
             return;
 
-        bool actual = controladorVisualBrazo.HuesosAbiertos;
+        ExplosionMode actualMode = GetActiveMode();
+        bool actualOpen =
+            actualMode != ExplosionMode.None &&
+            actualMode != ExplosionMode.Inconsistent &&
+            IsModeOpen(actualMode);
+
         if (!stateInitialized)
         {
-            lastHuesosAbiertos = actual;
+            lastMode = actualMode;
+            lastModeOpen = actualOpen;
             stateInitialized = true;
             return;
         }
 
-        if (!force && actual == lastHuesosAbiertos)
+        if (!force &&
+            actualMode == lastMode &&
+            actualOpen == lastModeOpen)
             return;
 
-        lastHuesosAbiertos = actual;
+        lastMode = actualMode;
+        lastModeOpen = actualOpen;
         latchedState = currentState;
         triggerLatch = true;
         cooldownUntil = Time.unscaledTime + cooldown;
-        ResetProgress();
+        CancelGestureProgress();
     }
+
+private ExplosionMode GetActiveMode()
+    {
+        if (controladorVisualBrazo == null)
+            return ExplosionMode.None;
+
+        bool huesos = controladorVisualBrazo.HuesosVisibles;
+        bool musculos = controladorVisualBrazo.MusculosVisibles;
+
+        if (huesos && musculos)
+            return ExplosionMode.Inconsistent;
+        if (huesos)
+            return ExplosionMode.Huesos;
+        if (musculos)
+            return ExplosionMode.Musculos;
+
+        return ExplosionMode.None;
+    }
+
+    private bool IsModeOpen(ExplosionMode mode)
+    {
+        return mode == ExplosionMode.Huesos
+            ? controladorVisualBrazo.HuesosAbiertos
+            : mode == ExplosionMode.Musculos &&
+              controladorVisualBrazo.MusculosAbiertos;
+    }
+
+    private bool IsModeInTransition(ExplosionMode mode)
+    {
+        return mode == ExplosionMode.Huesos
+            ? controladorVisualBrazo.HuesosEnTransicion
+            : mode == ExplosionMode.Musculos &&
+              controladorVisualBrazo.MusculosEnTransicion;
+    }
+
+    private void ToggleMode(ExplosionMode mode)
+    {
+        if (mode == ExplosionMode.Huesos)
+            controladorVisualBrazo.AlternarExplosionHuesos();
+        else if (mode == ExplosionMode.Musculos)
+            controladorVisualBrazo.AlternarExplosionMusculos();
+    }
+
+    private void WarnInconsistentMode()
+    {
+        if (!debugGesture || inconsistentModeWarningLogged)
+            return;
+
+        inconsistentModeWarningLogged = true;
+        Debug.LogWarning(
+            "GESTURE: Huesos y músculos están visibles simultáneamente. No se ejecutará ninguna explosión.",
+            this);
+    }
+
 
     private void CancelGestureProgress()
     {
@@ -318,13 +404,18 @@ public class GestureExplosionController : MonoBehaviour
         LogScore(sample);
     }
 
-    private void LogFailedConfirmationIfNeeded()
+private void LogFailedConfirmationIfNeeded()
     {
         if (!debugGesture || controladorVisualBrazo == null)
             return;
 
+        ExplosionMode mode = GetActiveMode();
+        if (mode == ExplosionMode.None ||
+            mode == ExplosionMode.Inconsistent)
+            return;
+
         float required = 0f;
-        if (!controladorVisualBrazo.HuesosAbiertos)
+        if (!IsModeOpen(mode))
         {
             if (currentState == HandState.Closed && !armedForOpen)
                 required = closedPreparationTime;
