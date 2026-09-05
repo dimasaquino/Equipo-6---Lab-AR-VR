@@ -5,6 +5,8 @@ public class ElementoAnatomicoInteractivo : MonoBehaviour
     [Header("Información anatómica")]
     [SerializeField] private string nombreAnatomico;
 
+    public string NombreAnatomico => nombreAnatomico;
+
     [SerializeField]
     [TextArea(3, 6)]
     private string descripcion;
